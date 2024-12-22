@@ -11,7 +11,7 @@ const Footer = () => {
             </div>
             <div className='hidden md:block'>
                 <h1 className='font-bold text-xl md:text-lg'>QUICKLINKS</h1>
-                <div className='text-gray-500 font-medium text-sm mt-5 grid grid-cols-2 gap-5 gap-x-40'>
+                <div className='text-gray-500 font-medium text-sm mt-5 grid grid-cols-2 gap-5 lg:gap-x-40'>
                     <a href="">Product</a>
                     <a href="">Company</a>
                     <a href="">Information</a>
