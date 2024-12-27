@@ -2,7 +2,6 @@ import React from 'react'
 import Client from '../../assets/client.png'
 import Communication from '../../assets/communication.png'
 import Boost from '../../assets/boost.png'
-import Analytic from '../../assets/analytic.png'
 
 const Feature2 = () => {
   return (
@@ -43,8 +42,18 @@ const Feature2 = () => {
                     <p className='text-sm'>Centralize all client interactions to eliminate miscommunication</p>
                 </div>
             </div>
-            <div className="lg:h-[600px] md:w-[400px] md:h-[350px] lg:w-[600px] md:col-span-1 md:row-start-2 lg:col-start-1 lg:row-span-2">
+            {/* <div className="lg:h-[600px] md:w-[400px] md:h-[350px] lg:w-[600px] md:col-span-1 md:row-start-2 lg:col-start-1 lg:row-span-2">
                 <img className='object-contain h-full w-full' src={Analytic} alt="" />
+            </div> */}
+            <div className="md:col-span-1 md:row-start-2 lg:col-start-1 lg:row-span-2 w-full h-[350px] md:h-full"
+                        style={{
+                            backgroundImage: `url(${Boost})`,
+                            backgroundSize: 'contain',
+                            backgroundRepeat: 'no-repeat',
+                            backgroundPosition: 'center',
+                          }}
+            >
+                {/* <img className='object-cover h-full w-full' src={Overview} alt="" /> */}
             </div>
         </div>
     </div>

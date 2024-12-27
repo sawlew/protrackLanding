@@ -5,7 +5,7 @@ import Overview from '../../assets/overview.png'
 
 const Feature1 = () => {
   return (
-    <div className='mx-2 bg-white pt-20 px-5 md:px-10 flex justify-center items-center'>
+    <div id='features' className='mx-2 bg-white pt-20 px-5 md:px-10 flex justify-center items-center'>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-rows-2 lg:w-[90%]'>
             <div className="lg:h-[350px] md:col-span-2 lg:col-span-1 lg:col-start-1 lg:row-start-1">
                 <span className='features-gradient px-5 py-1 rounded-lg text-sm font-semibold'>
@@ -30,7 +30,7 @@ const Feature1 = () => {
                     </div>
                 </div>
             </div>
-            <div className="lg:h-[250px] md:h-[350px] md:col-span-1 lg:row-start-2 flex flex-col lg:flex-row items-center justify-between">
+            <div className=" md:col-span-1 lg:row-start-2 flex flex-col lg:flex-row items-center justify-between">
                 <div className='w-1/2 md:w-3/4 lg:w-[40%] text-center flex flex-col items-center'>
                     <img className='w-12 lg:w-16' src={Automated} alt="" />
                     <p className='text-md font-semibold my-5 md:my-2'>Automated Project Creation</p>
@@ -42,8 +42,18 @@ const Feature1 = () => {
                     <p className='text-sm'>Create professional invoices, track payments, and send automated reminders for overdue accounts</p>
                 </div>
             </div>
-            <div className="lg:h-[600px] md:w-[400px] md:h-[350px] lg:w-[600px] md:col-span-1 lg:col-start-2 lg:row-span-2">
+            {/* <div className="lg:h-[600px] md:w-[400px] md:h-[350px] lg:w-[600px] md:col-span-1 lg:col-start-2 lg:row-span-2">
                 <img className='object-cover h-full w-full' src={Overview} alt="" />
+            </div> */}
+            <div className="md:col-span-1 lg:col-start-2 lg:row-span-2 w-full h-[350px] md:h-auto"
+                        style={{
+                            backgroundImage: `url(${Overview})`,
+                            backgroundSize: 'contain',
+                            backgroundRepeat: 'no-repeat',
+                            backgroundPosition: 'center',
+                          }}
+            >
+                {/* <img className='object-cover h-full w-full' src={Overview} alt="" /> */}
             </div>
         </div>
     </div>

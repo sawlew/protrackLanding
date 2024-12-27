@@ -3,7 +3,7 @@ import Integration from '../../assets/integration.png'
 
 const Workflow = () => {
   return (
-    <div className='mx-2 bg-white pt-20 px-5 md:px-10 lg:flex justify-center items-center gap-3'>
+    <div id='integration' className='mx-2 bg-white pt-20 px-5 md:px-10 lg:flex justify-center items-center gap-3'>
         <div className='lg:w-[40%]'>
             <h1 className='text-lg font-semibold md:text-2xl'>Integrate critical workflows</h1>
             <p className='text-sm my-8'>Link Protrack to your existing tools, connect important business processes, and build more powerful applications.</p>

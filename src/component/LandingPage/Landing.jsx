@@ -5,6 +5,7 @@ import AboutUs from './AboutUs'
 import AboutStats from './AboutStats'
 import Feature1 from './Feature1'
 import Feature2 from './Feature2'
+import Feature3 from './Feature3'
 import Workflow from './Workflow'
 import Testimonials from './Testimonials'
 import Footer from './Footer'
@@ -18,6 +19,7 @@ const Landing = () => {
       <AboutStats />
       <Feature1 />
       <Feature2 />
+      <Feature3 />
       <Workflow />
       <Testimonials />
       <Footer />

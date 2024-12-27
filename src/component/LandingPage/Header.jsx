@@ -1,24 +1,33 @@
 import React from 'react'
+import { Link as ScrollLink } from 'react-scroll';
 
 const Header = () => {
   return (
-    <div className='fixed top-0 w-full z-10 flex md:flex-row-reverse justify-between items-center px-4 py-6 md:py-3 bg-white font-[Poppins]'>
+    <div className='fixed top-0 w-full z-40 flex md:flex-row-reverse justify-between items-center px-4 py-6 md:py-3 bg-white font-[Poppins]'>
       <div className='hidden md:block'>
-        <button className='bg-[#5B44E8] px-10 py-3 rounded-lg text-white border-none'>Sign Up</button>
+        <button className='hover:bg-[#5740EABF] active:bg-[#5B44E8] bg-[#5B44E8] px-10 py-3 rounded-lg text-white border-none'>Join Waitlist</button>
       </div>
       <nav className='hidden lg:block'>
         <ul className='flex gap-5 font-medium'>
-          <li className='hover:underline text-[#5740EA]'><a href="">Home</a></li>
-          <li className='hover:underline'><a href="">Features</a></li>
-          <li className='hover:underline'><a href="">Pricing</a></li>
-          <li className='hover:underline'><a href="">Supports</a></li>
+          <li className='cursor-pointer hover:font-bold hover:text-[#5740EA]'>
+            <ScrollLink to="hero" smooth={true} duration={700}>Home</ScrollLink>
+          </li>
+          <li className='cursor-pointer hover:font-bold hover:text-[#5740EA]'>
+            <ScrollLink to="features" smooth={true} duration={700}>Features</ScrollLink>
+          </li>
+          <li className='cursor-pointer hover:font-bold hover:text-[#5740EA]'>
+            <ScrollLink to="integration" smooth={true} duration={700}>Integration</ScrollLink>
+          </li>
+          <li className='cursor-pointer hover:font-bold hover:text-[#5740EA]'>
+            <ScrollLink to="testimonials" smooth={true} duration={700}>Testimonials</ScrollLink>
+          </li>
         </ul>
       </nav>
       <div className=''>
         <p className='font-bold text-xl md:text-2xl'>ProTrack</p>
       </div>
       <div className='md:hidden'>
-        <button className='bg-[#5B44E8] px-5 py-2 text-xs rounded-lg text-white border-none'>Use App</button>
+        <button className='hover:bg-[#5740EABF] active:bg-[#5B44E8] bg-[#5B44E8] px-5 py-2 text-xs rounded-lg text-white border-none'>Use App</button>
       </div>
       <div  className='flex gap-3 md:gap-0 md:flex-row-reverse lg:hidden'>
         <span className='md:hidden'>
