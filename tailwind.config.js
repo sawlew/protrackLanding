@@ -6,7 +6,10 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: { 'vector': 'url("./src/assets/Vector.png")', }
+      backgroundImage: {
+        'vector': 'url("./src/assets/Vector.png")',
+        'herowall': 'url("./assets/herowall.png")',
+      }
     },
   },
   plugins: [ function({ addUtilities }) {

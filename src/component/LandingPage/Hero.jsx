@@ -7,14 +7,15 @@ import MeetingD from '../../assets/meeting.png'
 import ProgressD from '../../assets/progress.png'
 import ProjectD from '../../assets/projects.png'
 import FinancesD from '../../assets/finances.png'
+// import HeroWallPaper from '../../assets/herowall.png'
 import { Link as ScrollLink } from 'react-scroll'
 
 const Hero = () => {
   return (
-    <div id='hero' className='text-center bg-[#5740EA] h-[500px] md:h-[700px] lg:h-screen flex flex-col gap-3 justify-center items-center md:block text-white relative'>
-          <h1 className='text-lg md:text-xl lg:text-5xl font-semibold md:pt-36 md:mb-3 leading-9 lg:leading-[64px]'>Your Projects, Clients, and Finances, <br/>All in One Place</h1>
-          <h3 className='text-sm'>Simplify your workday with protrack - Where Productivity meets profitability</h3>
-          <div className='w-full hidden md:block mt-9 relative'>
+    <div id='hero' className='text-center bg-[#5740EA] h-[500px] md:h-[700px] lg:h-screen flex flex-col gap-3 justify-center items-center md:block text-white relative lg:bg-herowall bg-contain bg-no-repeat bg-center'>
+          <h1 className='text-lg md:text-xl lg:text-5xl font-semibold md:pt-36 md:mb-3 leading-9 lg:leading-[64px] lg:hidden'>Your Projects, Clients, and Finances, <br/>All in One Place</h1>
+          <h3 className='text-sm lg:hidden'>Simplify your workday with protrack - Where Productivity meets profitability</h3>
+          <div className='w-full hidden md:block mt-9 relative lg:hidden'>
             <div className='flex justify-between items-center bg-white p-4 rounded-lg w-3/4 lg:w-[40%] mx-auto'>
               <p className='text-gray-500 text-sm font-medium'>Get Started for free</p>
               <button className='text-white text-sm px-5 py-3 rounded-lg bg-[#5740EA] border-none'>Join Waitlist</button>
