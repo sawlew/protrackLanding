@@ -9,7 +9,14 @@ module.exports = {
       backgroundImage: {
         'vector': 'url("./src/assets/Vector.png")',
         'herowall': 'url("./assets/herowall.png")',
-      }
+      },
+      backgroundSize: {
+        '50%': '50%',
+        '75%': '75%',
+        '90%': '90%',
+
+      },
+
     },
   },
   plugins: [ function({ addUtilities }) {
